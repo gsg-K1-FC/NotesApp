@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <h2>To Do App</h2>
+      <div id="add-div">
+        <form>
+          <div>
+            <input
+              type="text"
+              id="title"
+              placeholder="Add title"
+              class="title"
+            />
+          </div>
+          <div>
+            <textarea
+              id="description"
+              cols="60"
+              rows="8"
+              placeholder="Add description"
+            ></textarea>
+          </div>
+
+          <button id="add-btn" type="button">Add</button>
+        </form>
+      </div>
+
+      <div id="notes-list">
+        <ul id="list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
