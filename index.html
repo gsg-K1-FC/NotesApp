@@ -14,7 +14,7 @@
             <input
               type="text"
               id="title"
-              placeholder="Add title"
+              placeholder="Add Title"
               class="title"
             />
           </div>
@@ -24,9 +24,9 @@
               cols="60"
               rows="8"
               placeholder="Add description"
+              class="description"
             ></textarea>
           </div>
-
           <button id="add-btn" type="button">Add</button>
         </form>
       </div>
@@ -34,7 +34,31 @@
       <div id="notes-list">
         <ul id="list"></ul>
       </div>
+
+      <div id="edit-note" class="hide">
+        <form>
+          <div>
+            <input
+              type="text"
+              id="edit-title"
+              placeholder="Edit Title"
+              class="title"
+            />
+          </div>
+          <div>
+            <textarea
+              id="edit-description"
+              cols="60"
+              rows="8"
+              placeholder="Edit Descriptioon"
+              class="description"
+            ></textarea>
+          </div>
+          <button id="save" type="button">Save</button>
+          <button id="cancel" type="button">Cancel</button>
+        </form>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
